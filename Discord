@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Discord Style Site</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #313338;
+  color: white;
+  display: flex;
+  height: 100vh;
+}
+
+/* Servers */
+.servers {
+  width: 70px;
+  background: #1e1f22;
+  padding: 10px;
+}
+
+.server {
+  width: 50px;
+  height: 50px;
+  background: #5865f2;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Channels */
+.channels {
+  width: 220px;
+  background: #2b2d31;
+  padding: 15px;
+}
+
+.channel {
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.channel:hover {
+  background: #3f4147;
+}
+
+/* Chat */
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 15px;
+  background: #2b2d31;
+}
+
+.messages {
+  flex: 1;
+  padding: 15px;
+}
+
+.input {
+  padding: 10px;
+  background: #383a40;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #1e1f22;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="servers">
+  <div class="server"></div>
+  <div class="server"></div>
+</div>
+
+<div class="channels">
+  <div class="channel"># general</div>
+  <div class="channel"># gaming</div>
+</div>
+
+<div class="chat">
+  <div class="header"># general</div>
+  <div class="messages">
+    <p><b style="color:#5865f2;">User:</b> Hello 👋</p>
+  </div>
+  <div class="input">
+    <input placeholder="Message #general">
+  </div>
+</div>
+
+</body>
+</html>
